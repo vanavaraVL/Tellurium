@@ -1,0 +1,38 @@
+<section>
+  <div class="href-target" id="input-types"></div>
+  <h1>
+    Animals list
+  </h1>
+
+  <div class="nice-form-group">
+    <label>Create new animal</label>
+    <input type="button" value="Add" (click)="add()" />
+  </div>
+
+  <table class='table table-striped' aria-labelledby="tableLabel">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let animal of animals; let i = index">
+        <td>{{ animal.name }}</td>
+        <td>
+          <div class="nice-form-group">
+            <input type="button" value="Edit" (click)="edit(i)" />
+          </div>
+        </td>
+        <td>
+          <div class="nice-form-group">
+            <input type="button" value="Delete" (click)="delete(i)" />
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</section>

@@ -1,0 +1,48 @@
+version: 2.1
+
+workflows:
+  version: 2
+  
+  build-and-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: 
+                - development
+                - master
+jobs:
+
+  build:
+    resource_class: large
+    docker:
+      - image: mcr.microsoft.com/dotnet/sdk:6.0
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: Install prerequisites
+          command: |
+            apt update
+      - run: 
+          name: Build web api application
+          command: |
+            dotnet publish -c Release -o out src/farmManagement/backend/FarmManagement.API/FarmManagement.API.csproj
+      - run: dotnet test --logger "trx" src/farmManagement/backend/tests/FarmManagement.Unit.Tests
+      - run:
+          name: Store test results
+          when: always
+          command: |
+              dotnet tool install -g trx2junit
+              trx2junit src/farmManagement/backend/tests/FarmManagement.Unit.Tests/TestResults/*.trx  --output testresults
+      - store_test_results:
+          path: testresults
+      - store_artifacts:
+          path: testresults
+          destination: TestResults
+      - persist_to_workspace:
+          root: .
+          paths:
+            - out
+            - src/farmManagement/backend/Dockerfile
+            - BUILD

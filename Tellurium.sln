@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{374E8186-2CAB-41D2-958F-E490EB02F82D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "farmManagement", "farmManagement", "{6ADAB534-A58B-4F15-80AD-9B620CC5FAFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dfsSample", "dfsSample", "{925C6272-2CAF-439E-BE31-9BD15C55E178}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{B58E5232-89CA-4309-B8D1-E387FD890189}"
+	ProjectSection(SolutionItems) = preProject
+		src\farmManagement\backend\config.yml = src\farmManagement\backend\config.yml
+		src\farmManagement\backend\Dockerfile = src\farmManagement\backend\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{E88B7FB3-F857-406C-A0CA-CCF54B8BFA99}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmManagement.API", "src\farmManagement\backend\FarmManagement.API\FarmManagement.API.csproj", "{1F5C2401-57F6-4109-BAEA-907D79EB7361}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmManagement.Dal", "src\farmManagement\backend\FarmManagement.Dal\FarmManagement.Dal.csproj", "{93F1A153-AEDA-4479-87DB-0C5BE55BDEE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmManagement.Models", "src\farmManagement\backend\FarmManagement.Models\FarmManagement.Models.csproj", "{60B70F87-3901-46AC-A7C4-013C812292ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmManagement.Services", "src\farmManagement\backend\FarmManagement.Services\FarmManagement.Services.csproj", "{0D70E742-E6AB-42CF-8C51-F523C07741BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3DBE3752-C735-4D0B-8629-C1CD0D9C4B1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmManagement.Dal.InMemory", "src\farmManagement\backend\FarmManagement.Dal.InMemory\FarmManagement.Dal.InMemory.csproj", "{9E2CD727-912B-4048-AE99-82B6119737BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmManagement.Unit.Tests", "src\farmManagement\backend\tests\FarmManagement.Unit.Tests\FarmManagement.Unit.Tests.csproj", "{3EC79152-196E-4D79-A103-8D9E6774E33B}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "FarmManagement.Web", "src\farmManagement\frontend\FarmManagement.Web\FarmManagement.Web.esproj", "{6EC1DAEB-D912-4512-B931-C48AC73AC116}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{D5AE0FFE-71B3-4988-A228-4C73DF1B1160}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F5C2401-57F6-4109-BAEA-907D79EB7361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5C2401-57F6-4109-BAEA-907D79EB7361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5C2401-57F6-4109-BAEA-907D79EB7361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5C2401-57F6-4109-BAEA-907D79EB7361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F1A153-AEDA-4479-87DB-0C5BE55BDEE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F1A153-AEDA-4479-87DB-0C5BE55BDEE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F1A153-AEDA-4479-87DB-0C5BE55BDEE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F1A153-AEDA-4479-87DB-0C5BE55BDEE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60B70F87-3901-46AC-A7C4-013C812292ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B70F87-3901-46AC-A7C4-013C812292ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B70F87-3901-46AC-A7C4-013C812292ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B70F87-3901-46AC-A7C4-013C812292ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D70E742-E6AB-42CF-8C51-F523C07741BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D70E742-E6AB-42CF-8C51-F523C07741BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D70E742-E6AB-42CF-8C51-F523C07741BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D70E742-E6AB-42CF-8C51-F523C07741BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E2CD727-912B-4048-AE99-82B6119737BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E2CD727-912B-4048-AE99-82B6119737BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E2CD727-912B-4048-AE99-82B6119737BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E2CD727-912B-4048-AE99-82B6119737BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC79152-196E-4D79-A103-8D9E6774E33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC79152-196E-4D79-A103-8D9E6774E33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC79152-196E-4D79-A103-8D9E6774E33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC79152-196E-4D79-A103-8D9E6774E33B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC1DAEB-D912-4512-B931-C48AC73AC116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC1DAEB-D912-4512-B931-C48AC73AC116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC1DAEB-D912-4512-B931-C48AC73AC116}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6EC1DAEB-D912-4512-B931-C48AC73AC116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC1DAEB-D912-4512-B931-C48AC73AC116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC1DAEB-D912-4512-B931-C48AC73AC116}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6ADAB534-A58B-4F15-80AD-9B620CC5FAFF} = {374E8186-2CAB-41D2-958F-E490EB02F82D}
+		{925C6272-2CAF-439E-BE31-9BD15C55E178} = {374E8186-2CAB-41D2-958F-E490EB02F82D}
+		{B58E5232-89CA-4309-B8D1-E387FD890189} = {6ADAB534-A58B-4F15-80AD-9B620CC5FAFF}
+		{E88B7FB3-F857-406C-A0CA-CCF54B8BFA99} = {6ADAB534-A58B-4F15-80AD-9B620CC5FAFF}
+		{1F5C2401-57F6-4109-BAEA-907D79EB7361} = {B58E5232-89CA-4309-B8D1-E387FD890189}
+		{93F1A153-AEDA-4479-87DB-0C5BE55BDEE0} = {B58E5232-89CA-4309-B8D1-E387FD890189}
+		{60B70F87-3901-46AC-A7C4-013C812292ED} = {B58E5232-89CA-4309-B8D1-E387FD890189}
+		{0D70E742-E6AB-42CF-8C51-F523C07741BA} = {B58E5232-89CA-4309-B8D1-E387FD890189}
+		{3DBE3752-C735-4D0B-8629-C1CD0D9C4B1F} = {B58E5232-89CA-4309-B8D1-E387FD890189}
+		{9E2CD727-912B-4048-AE99-82B6119737BC} = {B58E5232-89CA-4309-B8D1-E387FD890189}
+		{3EC79152-196E-4D79-A103-8D9E6774E33B} = {3DBE3752-C735-4D0B-8629-C1CD0D9C4B1F}
+		{6EC1DAEB-D912-4512-B931-C48AC73AC116} = {E88B7FB3-F857-406C-A0CA-CCF54B8BFA99}
+		{D5AE0FFE-71B3-4988-A228-4C73DF1B1160} = {374E8186-2CAB-41D2-958F-E490EB02F82D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5899E64C-F97E-4001-87C8-5642FBD686C7}
+	EndGlobalSection
+EndGlobal

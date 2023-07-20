@@ -1,0 +1,17 @@
+<section>
+  <div class="href-target" id="input-types"></div>
+  <h1>
+    {{editState}} animal
+  </h1>
+  <form [formGroup]="editForm">
+    <div class="nice-form-group">
+      <label>Name</label>
+      <input type="text" placeholder="Your Name" formControlName="name" />
+      <div [innerHTML]="validate('name')" class="text-danger"></div>
+    </div>
+
+    <div class="nice-form-group">
+      <input type="button" value="Save" (click)="saveData()" />
+    </div>
+    </form>
+</section>
