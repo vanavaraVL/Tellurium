@@ -38,10 +38,10 @@ Includes implementation of service layouts for the farm, models mappings profile
 - [Backend unit tests](./src/farmManagement/backend/tests)
 Uses Autofixture and NUnit
 
-- [Frontend based on Angular](./src/farmManagement/frontend/FarmManagment.Web)
+- [Frontend based on Angular](./src/farmManagement/frontend/FarmManagement.Web)
  Uses service architecture principles for easy testing and team work
 
-- [Frontend unit tests](./src/farmManagement/FarmManagment.Web/src/app/pages/animals/tests)
+- [Frontend unit tests](./src/farmManagement/frontend/FarmManagement.Web/src/app/pages/animals/tests)
 Uses Karma and Jasmine
 
 - [Scripts](./src/farmManagement/backend)
@@ -50,7 +50,7 @@ The folder contains docker, circleci, git and other scripts
 
 ### How to run
 
-1. Under the folder (./src/farmManagement/frontend/FarmManagment.Web) perform `npm install`
+1. Under the folder (./src/farmManagement/frontend/FarmManagement.Web) perform `npm install`
 2. Run WebAPI project
 
 ## DFS of the matrix
