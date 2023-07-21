@@ -18,7 +18,7 @@ Output: 2
 
 ## Approach
 
-![DFS overview](./././assets/dfs.svg)
+![DFS overview](./assets/dfs.svg)
 
 Here we are looking for neighbors from current position of element:
 
@@ -36,8 +36,8 @@ Uses DFS approach to find all regions in the matrix.
 - [Matrix resolver](./DFSMatrix.App/MatrixResolver.cs)
 The dependency which allows to build and validate the matrix from the string.
 
-- [Matrix resolver](./DFSMatrix.App/RegionFinder.cs)
+- [Region finder](./DFSMatrix.App/RegionFinder.cs)
 Resolves all regions in the matrix and return the total count of regions.
 
-- [Backend Web](./DFSMatrix.Unit.Tests)
+- [Unit tests](./DFSMatrix.Unit.Tests)
 Unit tests.
