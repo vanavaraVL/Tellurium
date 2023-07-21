@@ -60,3 +60,5 @@ output only one value into the console – number of areas formed of number 1.
 The matrix is presented as a string value where ‘,’ is used as a separator for columns, ‘;’ is used as
 a separator for rows. For instance, “1,0,1;0,1,0” string value should be converted to the matrix
 [[1,0,1], [0,1,0]].
+
+![DFS overview](./assets/dfs.svg)

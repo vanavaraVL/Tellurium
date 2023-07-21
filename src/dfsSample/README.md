@@ -18,6 +18,8 @@ Output: 2
 
 ## Approach
 
+![DFS overview](./assets/dfs.svg)
+
 Here we are looking for neighbors from current position of element:
 
 1. If a neighbor is 1 or has been visited - we skip it
