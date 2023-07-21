@@ -30,14 +30,14 @@ We are looking by the circle: top-right-bottom-left.
 Finally we just return 1 (current visited element) + the sum of all neighbors.
 The sum in that case - just the sum of '0' elements in the region of all neighbors.
 
-- [Application](./DFSMatrix.App)
+- [Application](./DFSMatrix.App)\
 Uses DFS approach to find all regions in the matrix.
 
-- [Matrix resolver](./DFSMatrix.App/MatrixResolver.cs)
+- [Matrix resolver](./DFSMatrix.App/MatrixResolver.cs)\
 The dependency which allows to build and validate the matrix from the string.
 
-- [Region finder](./DFSMatrix.App/RegionFinder.cs)
+- [Region finder](./DFSMatrix.App/RegionFinder.cs)\
 Resolves all regions in the matrix and return the total count of regions.
 
-- [Unit tests](./DFSMatrix.Unit.Tests)
+- [Unit tests](./DFSMatrix.Unit.Tests)\
 Unit tests.

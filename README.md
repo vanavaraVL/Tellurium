@@ -14,37 +14,37 @@ The source code should be production ready.
 
 Project contains the following namespaces and organization modules:
 
-- [Backend based on .NET Core WebAPI](./src/farmManagement/backend)
+- [Backend based on .NET Core WebAPI](./src/farmManagement/backend)\
 Uses service architecture principles for easy testing and team work.
 
-- [Backend Web](./src/farmManagement/backend/FarmManagement.API)
+- [Backend Web](./src/farmManagement/backend/FarmManagement.API)\
 .NET Core Web API application.
 
-- [Backend Dal](./src/farmManagement/backend/FarmManagement.Dal)
-Common library for Data Access Layer.
+- [Backend Dal](./src/farmManagement/backend/FarmManagement.Dal)\
+Common library for Data Access Layer.\
 Includes exception hierary, general repository and entities which are specific for implementation of access layer.
 
-- [Backend Dal InMemory](./src/farmManagement/backend/FarmManagement.Dal.InMemory)
-Certain library for Data Access Layer implemented via InMemory.
+- [Backend Dal InMemory](./src/farmManagement/backend/FarmManagement.Dal.InMemory)\
+Certain library for Data Access Layer implemented via InMemory.\
 Uses LazyCache (https://github.com/alastairtree/LazyCache) and certain implementation of repositories.
 
-- [Backend Models](./src/farmManagement/backend/FarmManagement.Models)
-Common library for Models.
+- [Backend Models](./src/farmManagement/backend/FarmManagement.Models)\
+Common library for Models.\
 Includes DTO, request/response objects.
 
-- [Backend Services](./src/farmManagement/backend/FarmManagement.Services)
+- [Backend Services](./src/farmManagement/backend/FarmManagement.Services)\
 Includes implementation of service layouts for the farm, models mappings profiles.
 
-- [Backend unit tests](./src/farmManagement/backend/tests)
+- [Backend unit tests](./src/farmManagement/backend/tests)\
 Uses Autofixture and NUnit.
 
-- [Frontend based on Angular](./src/farmManagement/frontend/FarmManagement.Web)
+- [Frontend based on Angular](./src/farmManagement/frontend/FarmManagement.Web)\
  Uses service architecture principles for easy testing and team work.
 
-- [Frontend unit tests](./src/farmManagement/frontend/FarmManagement.Web/src/app/pages/animals/tests)
+- [Frontend unit tests](./src/farmManagement/frontend/FarmManagement.Web/src/app/pages/animals/tests)\
 Uses Karma and Jasmine.
 
-- [Scripts](./src/farmManagement/backend)
+- [Scripts](./src/farmManagement/backend)\
 The folder contains docker, circleci, git and other scripts.
 
 
