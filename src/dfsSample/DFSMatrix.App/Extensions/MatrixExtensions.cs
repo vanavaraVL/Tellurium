@@ -4,8 +4,8 @@ public static class MatrixExtensions
 {
     /// <summary>
     /// Here we are looking for neighbors from current position
-    /// 1. If neighbor is 1 or has been visited - we skip it
-    /// 2. If neighbor is 0 then we are looking for its neighbors from its current position starting from previous point 1
+    /// 1. If a neighbor is 1 or has been visited - we skip it
+    /// 2. If a neighbor is 0 then we are looking for its neighbors from its current position starting again from point 1
     /// We are looking by circle: top-right-bottom-left
     /// Finally we just return 1 + the sum of all neighbors
     /// The sum in that case - just the sum of '0' elements in the region

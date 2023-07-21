@@ -23,7 +23,7 @@ Output: 2
 Here we are looking for neighbors from current position of element:
 
 1. If a neighbor is 1 or has been visited - we skip it
-2. If a neighbor is 0 then we are looking for its neighbors from its current position starting from previous point 1
+2. If a neighbor is 0 then we are looking for its neighbors from its current position starting again from point 1
 
 We are looking by the circle: top-right-bottom-left.
 
