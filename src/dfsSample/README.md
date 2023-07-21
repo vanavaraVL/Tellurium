@@ -18,7 +18,7 @@ Output: 2
 
 ## Approach
 
-![DFS overview](./assets/dfs.svg)
+![DFS overview](./././assets/dfs.svg)
 
 Here we are looking for neighbors from current position of element:
 
@@ -30,14 +30,14 @@ We are looking by the circle: top-right-bottom-left.
 Finally we just return 1 (current visited element) + the sum of all neighbors.
 The sum in that case - just the sum of '0' elements in the region of all neighbors.
 
-- [Application](./src/dfsSample/DFSMatrix.App)
+- [Application](./DFSMatrix.App)
 Uses DFS approach to find all regions in the matrix.
 
-- [Matrix resolver](./src/dfsSample/DFSMatrix.App/MatrixResolver.cs)
+- [Matrix resolver](./DFSMatrix.App/MatrixResolver.cs)
 The dependency which allows to build and validate the matrix from the string.
 
-- [Matrix resolver](./src/dfsSample/DFSMatrix.App/RegionFinder.cs)
+- [Matrix resolver](./DFSMatrix.App/RegionFinder.cs)
 Resolves all regions in the matrix and return the total count of regions.
 
-- [Backend Web](./src/dfsSample/DFSMatrix.Unit.Tests)
+- [Backend Web](./DFSMatrix.Unit.Tests)
 Unit tests.
